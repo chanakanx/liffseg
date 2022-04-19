@@ -1,0 +1,186 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ซัมซุงบำนาญ65 A90/5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <script>
+    // Query Params
+    const queryString = decodeURIComponent(window.location.search);
+    const params = new URLSearchParams(queryString);
+    document.getElementById("param").append(params.get("param"));
+  </script>
+
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1657013925-LjXpoEQg" })
+      await liff.shareTargetPicker([
+      {
+      "type": "flex",
+      "altText": "อาคเนย์ โทเทิล แคร์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "body": {
+          "type": "box",
+          "spacing": "md",
+          "contents": [
+            {
+              "text": "อาคเนย์ โทเทิล แคร์",
+              "type": "text",
+              "size": "xl",
+              "weight": "bold"
+            },
+            {
+              "size": "sm",
+              "weight": "bold",
+              "color": "#000000",
+              "text": "จุดเด่นของแบบประกัน",
+              "wrap": true,
+              "type": "text"
+            },
+            {
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "gravity": "center",
+                      "type": "text",
+                      "size": "xs",
+                      "wrap": true,
+                      "text": "⭕ เหมาจ่ายผู้ป่วยใน (IPD) สูงสุด 3 ล้านบาทต่อปี*"
+                    },
+                    {
+                      "type": "text",
+                      "size": "xs",
+                      "wrap": true,
+                      "text": "⭕ เหมาจ่ายผู้ป่วยนอก (OPD) 30,000 บาทต่อปี*"
+                    },
+                    {
+                      "wrap": true,
+                      "size": "xs",
+                      "text": "⭕ รับเงินก้อนสูงสุด 200,000 บาท*",
+                      "type": "text"
+                    },
+                    {
+                      "text": "⭕ คุ้มครองชีวิต 100,000 บาท*",
+                      "size": "xs",
+                      "type": "text",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ],
+              "type": "box",
+              "layout": "vertical"
+            }
+          ],
+          "layout": "vertical"
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "อาคเนย์ โทเทิล แคร์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "type": "video",
+          "url": "https://dl.dropboxusercontent.com/s/upg9bmipg4tpzi1/ProductHealth.mp4?dl=0",
+          "previewUrl": "https://dl.dropboxusercontent.com/s/rrqzsj18zg99wc3/introProductHealth.jpg?dl=0",
+          "altContent": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "1040:586",
+            "aspectMode": "cover",
+            "url": "https://dl.dropboxusercontent.com/s/rrqzsj18zg99wc3/introProductHealth.jpg?dl=0"
+          },
+          "aspectRatio": "1040:586"
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "อาคเนย์ โทเทิล แคร์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "aspectRatio": "320:213",
+          "type": "image",
+          "size": "full",
+          "aspectMode": "cover",
+          "url": "https://dl.dropboxusercontent.com/s/by6p1ysmoshexoc/1.%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B9%8C%20%E0%B9%82%E0%B8%97%E0%B9%80%E0%B8%97%E0%B8%B4%E0%B8%A5%20%E0%B9%81%E0%B8%84%E0%B8%A3%E0%B9%8C.png?dl=0"
+        },
+        "body": {
+          "contents": [
+            {
+              "size": "md",
+              "wrap": true,
+              "weight": "bold",
+              "type": "text",
+              "text": "อาคเนย์ โทเทิล แคร์"
+            },
+            {
+              "layout": "vertical",
+              "type": "box",
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "text": "แพ็กเกจประกันสุขภาพเหมาจ่าย คุ้มครองครบ จบในเล่มเดียว",
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ],
+                  "layout": "baseline",
+                  "type": "box",
+                  "spacing": "sm"
+                }
+              ]
+            }
+          ],
+          "paddingAll": "13px",
+          "type": "box",
+          "spacing": "sm",
+          "layout": "vertical"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "margin": "sm",
+              "height": "sm",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://lin.ee/zSf411Z"
+              },
+              "style": "primary",
+              "color": "#4FAD26",
+              "type": "button"
+            }
+          ]
+        }
+      }
+    }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+
+</html>

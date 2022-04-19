@@ -1,0 +1,189 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ซัมซุงบำนาญ65 A90/5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <script>
+    // Query Params
+    const queryString = decodeURIComponent(window.location.search);
+    const params = new URLSearchParams(queryString);
+    document.getElementById("param").append(params.get("param"));
+  </script>
+
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1657013925-LjXpoEQg" })
+      await liff.shareTargetPicker([
+      {
+      "type": "flex",
+      "altText": "ซูเปอร์ ไลฟ์ ซีรีส์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "body": {
+          "contents": [
+            {
+              "weight": "bold",
+              "size": "xl",
+              "type": "text",
+              "text": "ซูเปอร์ ไลฟ์ ซีรีส์"
+            },
+            {
+              "color": "#000000",
+              "wrap": true,
+              "type": "text",
+              "weight": "bold",
+              "size": "md",
+              "text": "จุดเด่นของแบบประกัน"
+            },
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "type": "text",
+                      "wrap": true,
+                      "gravity": "center",
+                      "text": "⭕ สบายใจ คุ้มครองชีวิตถึงอายุ 99 ปี",
+                      "size": "xs"
+                    },
+                    {
+                      "text": "⭕ จ่ายเบี้ยฯ แค่ 5 ปี สามารถเลือกแบ่งจ่ายได้ ราย 3 เดือน 6 เดือน หรือรายปี",
+                      "size": "xs",
+                      "wrap": true,
+                      "margin": "sm",
+                      "type": "text"
+                    },
+                    {
+                      "size": "xs",
+                      "type": "text",
+                      "wrap": true,
+                      "margin": "sm",
+                      "text": "⭕ ผลประโยชน์สูงสุด 150% ของจำนวนเงินเอาประกันภัย"
+                    },
+                    {
+                      "size": "xs",
+                      "type": "text",
+                      "wrap": true,
+                      "margin": "sm",
+                      "text": "⭕ มั่นใจ เพราะคุ้มครองชีวิตมากกว่า หรือเท่ากับเบี้ยฯ ที่ชำระมาทั้งหมด"
+                    }
+                  ],
+                  "layout": "vertical",
+                  "type": "box"
+                }
+              ],
+              "layout": "vertical",
+              "type": "box"
+            }
+          ],
+          "layout": "vertical",
+          "type": "box",
+          "spacing": "md"
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "ซูเปอร์ ไลฟ์ ซีรีส์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "type": "video",
+          "url": "https://dl.dropboxusercontent.com/s/0npl9ronvnk7d1v/Productlife1.mp4?dl=0",
+          "previewUrl": "https://dl.dropboxusercontent.com/s/ztpzwnnek6y32tq/introprodseg1.jpg?dl=0",
+          "altContent": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "1040:586",
+            "aspectMode": "cover",
+            "url": "https://dl.dropboxusercontent.com/s/ztpzwnnek6y32tq/introprodseg1.jpg?dl=0"
+          },
+          "aspectRatio": "1040:586"
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "ซูเปอร์ ไลฟ์ ซีรีส์",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "aspectRatio": "320:213",
+          "type": "image",
+          "size": "full",
+          "aspectMode": "cover",
+          "url": "https://dl.dropboxusercontent.com/s/ka103ch0e3fdnrt/1.%20%E0%B8%8B%E0%B8%B9%E0%B9%80%E0%B8%9B%E0%B8%AD%E0%B8%A3%E0%B9%8C%20%E0%B9%84%E0%B8%A5%E0%B8%9F%E0%B9%8C%20%E0%B8%8B%E0%B8%B5%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B9%8C.png?dl=0"
+        },
+        "body": {
+          "contents": [
+            {
+              "size": "md",
+              "wrap": true,
+              "weight": "bold",
+              "type": "text",
+              "text": "ซูเปอร์ ไลฟ์ ซีรีส์"
+            },
+            {
+              "layout": "vertical",
+              "type": "box",
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "text": "แบ่งจ่ายรายเดือนได้ คุ้มครองถึงอายุ 99ปี เบี้ยฯเริ่มต้นปีละ 2,110 บ.",
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ],
+                  "layout": "baseline",
+                  "type": "box",
+                  "spacing": "sm"
+                }
+              ]
+            }
+          ],
+          "paddingAll": "13px",
+          "type": "box",
+          "spacing": "sm",
+          "layout": "vertical"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "margin": "sm",
+              "height": "sm",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://lin.ee/zSf411Z"
+              },
+              "style": "primary",
+              "color": "#4FAD26",
+              "type": "button"
+            }
+          ]
+        }
+      }
+    }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+
+</html>
