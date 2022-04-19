@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สแตนดาร์ด เฮลท์ พลัส</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <script>
+    // Query Params
+    const queryString = decodeURIComponent(window.location.search);
+    const params = new URLSearchParams(queryString);
+    document.getElementById("param").append(params.get("param"));
+  </script>
+
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1657013925-LjXpoEQg" })
+      await liff.shareTargetPicker([
+      {
+      "type": "flex",
+      "altText": "สแตนดาร์ด เฮลท์ พลัส",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "body": {
+          "layout": "vertical",
+          "spacing": "md",
+          "type": "box",
+          "contents": [
+            {
+              "weight": "bold",
+              "text": "สแตนดาร์ด เฮลท์ พลัส",
+              "size": "xl",
+              "type": "text"
+            },
+            {
+              "wrap": true,
+              "weight": "bold",
+              "size": "sm",
+              "text": "จุดเด่นของแบบประกัน",
+              "type": "text",
+              "color": "#000000"
+            },
+            {
+              "contents": [
+                {
+                  "layout": "vertical",
+                  "type": "box",
+                  "contents": [
+                    {
+                      "wrap": true,
+                      "text": "⭕ ค่าห้อง ค่าอาหาร สูงสุดวันละ 5,000 บาท ต่อเนื่องถึง 150 วันต่อครั้ง",
+                      "type": "text",
+                      "size": "xs",
+                      "gravity": "center"
+                    },
+                    {
+                      "type": "text",
+                      "wrap": true,
+                      "text": "⭕ ความคุ้มครองค่าเวชศาสตร์ฟื้นฟู สูงสุด 8 ครั้งต่อปี",
+                      "size": "xs"
+                    },
+                    {
+                      "size": "xs",
+                      "text": "⭕ ค่ารักษาพยาบาลผู้ป่วยนอก ต่อเนื่องภายใน 30 วัน*",
+                      "wrap": true,
+                      "type": "text"
+                    },
+                    {
+                      "wrap": true,
+                      "type": "text",
+                      "text": "⭕ ความคุ้มครองค่าผ่าตัดเหมาจ่าย สูงสุด 110,000 บาทต่อครั้ง",
+                      "size": "xs"
+                    }
+                  ]
+                }
+              ],
+              "layout": "vertical",
+              "type": "box"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "สแตนดาร์ด เฮลท์ พลัส",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "aspectRatio": "320:213",
+          "type": "image",
+          "size": "full",
+          "aspectMode": "cover",
+          "url": "https://dl.dropboxusercontent.com/s/lfaqpfiiahk6c99/2.%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%20%E0%B9%80%E0%B8%AE%E0%B8%A5%E0%B8%97%E0%B9%8C%20%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%AA.png?dl=0"
+        },
+        "body": {
+          "contents": [
+            {
+              "size": "md",
+              "wrap": true,
+              "weight": "bold",
+              "type": "text",
+              "text": "สแตนดาร์ด เฮลท์ พลัส"
+            },
+            {
+              "layout": "vertical",
+              "type": "box",
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "text": "คุ้มครองแจ๋วๆ ในราคาจิ๋วๆ",
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ],
+                  "layout": "baseline",
+                  "type": "box",
+                  "spacing": "sm"
+                }
+              ]
+            }
+          ],
+          "paddingAll": "13px",
+          "type": "box",
+          "spacing": "sm",
+          "layout": "vertical"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "margin": "sm",
+              "height": "sm",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://lin.ee/zSf411Z"
+              },
+              "style": "primary",
+              "color": "#4FAD26",
+              "type": "button"
+            }
+          ]
+        }
+      }
+    }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+
+</html>
