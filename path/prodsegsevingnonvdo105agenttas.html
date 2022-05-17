@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คุ้มสุข เต็มสิบ 10/5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <script>
+    // Query Params
+    const queryString = decodeURIComponent(window.location.search);
+    const params = new URLSearchParams(queryString);
+    document.getElementById("param").append(params.get("param"));
+  </script>
+
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1657013925-LjXpoEQg" })
+      await liff.shareTargetPicker([
+      {
+      "type": "flex",
+      "altText": "คุ้มสุข เต็มสิบ 10/5",
+      "contents": {
+  "type": "bubble",
+  "size": "mega",
+  "body": {
+    "layout": "vertical",
+    "contents": [
+      {
+        "size": "xl",
+        "type": "text",
+        "text": "คุ้มสุข เต็มสิบ 10/5",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "จุดเด่นของแบบประกัน",
+        "weight": "bold",
+        "color": "#000000",
+        "wrap": true,
+        "size": "sm"
+      },
+      {
+        "layout": "vertical",
+        "type": "box",
+        "contents": [
+          {
+            "layout": "vertical",
+            "contents": [
+              {
+                "gravity": "center",
+                "text": "⭕ รับเงินจ่ายคืน 5% ของจำนวนเงินเอาประกันภัยทุกสิ้นปีกรมธรรม์ตั้งแต่ปีที่ 1 ถึงปีที่ 10",
+                "size": "xs",
+                "type": "text",
+                "wrap": true
+              },
+              {
+                "type": "text",
+                "size": "xs",
+                "wrap": true,
+                "text": "⭕ รับเงินครบกำหนดสัญญาอีก 250% ของจำนวนเงินเอาประกันภัย"
+              },
+              {
+                "type": "text",
+                "text": "⭕ รับผลประโยชน์รวมตลอดสัญญาสูงถึง 300% ของจำนวนเงินเอาประกันภัย",
+                "wrap": true,
+                "size": "xs"
+              },
+              {
+                "text": "⭕ ลดหย่อนภาษีได้สูงสุด 1 แสนบาท ตามหลักเกณฑ์ และเงื่อนไขของกรมสรรพากร",
+                "type": "text",
+                "size": "xs",
+                "wrap": true
+              }
+            ],
+            "type": "box"
+          }
+        ]
+      }
+    ],
+    "type": "box",
+    "spacing": "md"
+  }
+}
+    },
+    {
+      "type": "flex",
+      "altText": "คุ้มสุข เต็มสิบ 10/5",
+      "contents": {
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "aspectRatio": "320:213",
+    "type": "image",
+    "size": "full",
+    "aspectMode": "cover",
+    "url": "https://dl.dropboxusercontent.com/s/0zbb65mps4fygr0/3.%20%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%AA%E0%B8%B8%E0%B8%82%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%E0%B8%AA%E0%B8%B4%E0%B8%9A%2010-5.png?dl=0"
+  },
+  "body": {
+    "contents": [
+      {
+        "size": "md",
+        "wrap": true,
+        "weight": "bold",
+        "type": "text",
+        "text": "คุ้มสุข เต็มสิบ 10/5"
+      },
+      {
+        "layout": "vertical",
+        "type": "box",
+        "contents": [
+          {
+            "contents": [
+              {
+                "text": "จ่ายเบี้ยฯ 5 ปี คุ้มครอง 10 ปี ผลประโยชน์รวม 300% เบี้ยฯเริ่มต้น 15,000 บาท/ปี",
+                "type": "text",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xs"
+              }
+            ],
+            "layout": "baseline",
+            "type": "box",
+            "spacing": "sm"
+          }
+        ]
+      }
+    ],
+    "paddingAll": "13px",
+    "type": "box",
+    "spacing": "sm",
+    "layout": "vertical"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "margin": "sm",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "ดูรายละเอียด",
+          "uri": "https://lin.ee/1bdcmVp"
+        },
+        "style": "primary",
+        "color": "#4FAD26",
+        "type": "button"
+      }
+    ]
+  }
+}
+    }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+
+</html>

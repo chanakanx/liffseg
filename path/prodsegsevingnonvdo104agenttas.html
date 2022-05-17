@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เซฟวิ่ง ซูเปอร์โฟร์ 10/4</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <script>
+    // Query Params
+    const queryString = decodeURIComponent(window.location.search);
+    const params = new URLSearchParams(queryString);
+    document.getElementById("param").append(params.get("param"));
+  </script>
+
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1657013925-LjXpoEQg" })
+      await liff.shareTargetPicker([
+      {
+      "type": "flex",
+      "altText": "เซฟวิ่ง ซูเปอร์โฟร์ 10/4",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "body": {
+          "type": "box",
+          "spacing": "md",
+          "contents": [
+            {
+              "text": "เซฟวิ่ง ซูเปอร์โฟร์ 10/4",
+              "type": "text",
+              "size": "xl",
+              "weight": "bold"
+            },
+            {
+              "size": "sm",
+              "weight": "bold",
+              "color": "#000000",
+              "text": "จุดเด่นของแบบประกัน",
+              "wrap": true,
+              "type": "text"
+            },
+            {
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "gravity": "center",
+                      "type": "text",
+                      "size": "xs",
+                      "wrap": true,
+                      "text": "⭕ ออมสั้น คุ้มครองยาว ชำระเบี้ยประกันภัยสั้นเพียง 4 ปี คุ้มครอง 10 ปี"
+                    },
+                    {
+                      "type": "text",
+                      "size": "xs",
+                      "wrap": true,
+                      "text": "⭕ รับเงินคืน 4% ของจำนวนเงินเอาประกันภัยทุกปี ณ สิ้นปีกรมธรรม์ที่ 1-10"
+                    },
+                    {
+                      "wrap": true,
+                      "size": "xs",
+                      "text": "⭕ ผลประโยชน์รวมสูงถึง 440% ของจำนวนเงินเอาประกันภัย",
+                      "type": "text"
+                    },
+                    {
+                      "text": "⭕ ลดหย่อนภาษีได้สูงสุด 1 แสนบาท ตามหลักเกณฑ์ และเงื่อนไขของกรมสรรพากร",
+                      "size": "xs",
+                      "type": "text",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ],
+              "type": "box",
+              "layout": "vertical"
+            }
+          ],
+          "layout": "vertical"
+        }
+      }
+    },
+    {
+      "type": "flex",
+      "altText": "เซฟวิ่ง ซูเปอร์โฟร์ 10/4",
+      "contents": {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "aspectRatio": "320:213",
+          "type": "image",
+          "size": "full",
+          "aspectMode": "cover",
+          "url": "https://dl.dropboxusercontent.com/s/gh6o6fuay743dj3/2.%20%E0%B9%80%E0%B8%8B%E0%B8%9F%E0%B8%A7%E0%B8%B4%E0%B9%88%E0%B8%87%20%E0%B8%8B%E0%B8%B9%E0%B9%80%E0%B8%9B%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%9F%E0%B8%A3%E0%B9%8C%2010-4.png?dl=0"
+        },
+        "body": {
+          "contents": [
+            {
+              "size": "md",
+              "wrap": true,
+              "weight": "bold",
+              "type": "text",
+              "text": "เซฟวิ่ง ซูเปอร์โฟร์ 10/4"
+            },
+            {
+              "layout": "vertical",
+              "type": "box",
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "text": "จ่ายเบี้ยฯ 4 ปี คุ้มครองนาน 10 ปี ผลประโยชน์รวม 440% รับเงินคืน 4% ทุกปี",
+                      "type": "text",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ],
+                  "layout": "baseline",
+                  "type": "box",
+                  "spacing": "sm"
+                }
+              ]
+            }
+          ],
+          "paddingAll": "13px",
+          "type": "box",
+          "spacing": "sm",
+          "layout": "vertical"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "margin": "sm",
+              "height": "sm",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://lin.ee/1bdcmVp"
+              },
+              "style": "primary",
+              "color": "#4FAD26",
+              "type": "button"
+            }
+          ]
+        }
+      }
+    }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+
+</html>
